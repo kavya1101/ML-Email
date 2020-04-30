@@ -8,5 +8,5 @@ itsdangerous==1.1.0
 Jinja2==2.10.1
 matplotlib>=3.2.1
 seaborn>=0.10.0
-statsmodel>=0.10.2
+statsmodel==0.10.2
 imbalanced-learn>=0.4.3
