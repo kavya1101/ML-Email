@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style>
+        body {
+             background-color: #FAFAFA;
+             color: #DCDCDC;
+             font-family: Open Sans;
+             }
+        .login-box {
+                    margin-top: 100px;
+                    text-align: center;
+                    width: 430px;
+                    height: 380px;
+                    background-color: white;
+                    padding: 60px;
+                    position:relative;
+                    left:200px;
+                    }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div id="brandname">
+			<strong style="color:black">ML App</strong>
+		</div>
+	</header>
+	<div class= "well login-box">
+	<h2 style="color: black;">Spam Detector For Emails</h2>
+	<p style="color:blue;font-size:20;text-align: center;"><strong>Result for Comment</strong></p>
+	
+		
+	{% if prediction == 1%}
+	<h2 style="color:red;">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
